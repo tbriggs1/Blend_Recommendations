@@ -1,5 +1,10 @@
-const image = document.createElement('img');
+const logo = document.querySelector('.blend_recommendations');
 
-image.src = 'https://github.com/tbriggs1/Blend_Recommendations/blob/master/blend.png?raw=true';
+(function test(){
+    const image = document.createElement('img');
 
-document.querySelector('.blend_recommendations').appendChild(image);
+    image.src = 'https://github.com/tbriggs1/Blend_Recommendations/blob/master/blend.png?raw=true';
+
+    logo.appendChild(image);
+}) ();
+
