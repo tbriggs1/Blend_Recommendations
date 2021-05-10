@@ -8,3 +8,8 @@ const logo = document.querySelector('.blend_recommendations');
     logo.appendChild(image);
 }) ();
 
+(function openPopup(){
+    $('.blend_recommendations').click(() => {
+        document.body.style.background = "blue";
+    })
+})();
