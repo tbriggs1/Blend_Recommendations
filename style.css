@@ -7,3 +7,13 @@
 .blend_recommendations img {
     cursor: pointer;
 }
+
+.popup {
+    width:  20vw;
+    height: 80vh;
+    border: 1px solid #2D2D2D;
+    display: none;
+    background: whitesmoke;
+    text-align: center;
+    margin-right: 2rem;
+}

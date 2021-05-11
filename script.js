@@ -10,6 +10,11 @@ const logo = document.querySelector('.blend_recommendations');
 
 (function openPopup(){
     $('.blend_recommendations').click(() => {
-        document.body.style.background = "blue";
+        if ($('.popup').css("display") == 'none') {
+            $('.popup').css("display", "block");
+            $('.blend_recommendations img').css("margin-left", "16vw");
+        } else {
+            $('.popup').css("display", "none");
+        }
     })
 })();
