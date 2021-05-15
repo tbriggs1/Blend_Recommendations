@@ -4,13 +4,23 @@
         <title>Test</title>
         <link rel="stylesheet" href="style.css">
         <script src="jquery-3.6.0.js"></script>
+        <!-- Font awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="blend_recommendations">
-            <div class="popup">
-                <h1 style="color: #2d2d2d;">Hello</h1>
+        <!-- Blend Image -->
+        <div class="blend_recommendations"></div>
+        <!-- Popup main with search functionality -->
+        <div class="popup">
+            <h1 style="color: #2d2d2d;">Hi *OSAPI*, Search something?</h1>
+            <div class="search-with-button">
+                <form id="formSubmit" action="" target="_blank">
+                    <input id="search-bar" type="search"  placeholder="Search"></input>
+                </form>
+                <button id="searchButton"><i class="fa fa-search"></i></button>
             </div>
         </div>
     </body>
     <script src="script.js"></script>
 </html>
+
