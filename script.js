@@ -11,7 +11,7 @@ const logo = document.querySelector('.blend_recommendations');
 (function openPopup(){
     $('.blend_recommendations').click(() => {
         if ($('.popup').css("display") == 'none') {
-            $('.popup').css("display", "block");
+            $('.popup').css("display", "flex");
             $('.blend_recommendations img').css("margin-left", "16vw");
         } else {
             $('.popup').css("display", "none");

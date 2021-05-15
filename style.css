@@ -6,6 +6,8 @@
 
 .blend_recommendations img {
     cursor: pointer;
+    height: 100px;
+    width: 100px;
 }
 
 .popup {
@@ -16,6 +18,12 @@
     background: whitesmoke;
     text-align: center;
     margin-right: 2rem;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 11rem;
 }
 
 #search-bar{
@@ -33,8 +41,6 @@
     display:flex;
     padding-right:1rem;
     padding-left:1rem;
-    margin-right: auto;
-    margin-left: 10rem;
     margin-top: 0.5rem;
 }
 
