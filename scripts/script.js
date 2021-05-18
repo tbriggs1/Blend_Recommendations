@@ -12,9 +12,10 @@ const logo = document.querySelector('.blend_recommendations');
     $('.blend_recommendations').click(() => {
         if ($('.popup').css("display") == 'none') {
             $('.popup').css("display", "flex");
-            $('.blend_recommendations img').css("margin-left", "16vw");
+            $('.blend_recommendations img').css("margin-right", "25vw");
         } else {
             $('.popup').css("display", "none");
+            $('.blend_recommendations img').css("margin-right", "0vw");
         }
     })
 })();
