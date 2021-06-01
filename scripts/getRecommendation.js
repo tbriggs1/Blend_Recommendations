@@ -1,13 +1,16 @@
 $(function () {
+
     $.ajax({
         url: 'https://ee12a4e9098e.ngrok.io/recommendations/recommended/1/getRecommendedBy',
         type: 'GET',
-        jsonp: 'callback',
-        dataType: 'jsonp',
+        json: 'callback',
+        contentType: 'application/json',
         crossDomain: true,
         success: function (data) {
             console.log('all data: ', data);
-            albumAccordion(data);
+            console.log(data.d)
+            console.log(data.d.results)
+            albumAccordion(data.d.results);
         },
         error: function (x, y, z) {
             console.log('x', x);
@@ -18,7 +21,7 @@ $(function () {
     });
     
     let albumAccordion = function (data) {
-        data.data.forEach(function (item, index) {
+        data.forEach(function (item, index) {
         console.log(item, index);
         $('#discogAccordion').append(
             '<div class="card w-75">' +
@@ -31,4 +34,4 @@ $(function () {
           '</div>'
         );
     });
-    };
+    }
