@@ -5,19 +5,19 @@
 
     $("#formSubmit").submit((event) => {
         input = document.getElementById("search-bar").value;
-        window.location = `https://jam12.sapjam.com/home/hkfvT1ygsHLz13M5N7553v?%24searchText=${input}`;
+        window.location = `https://jamsalesdemo2.sapjam.com/home/HdMS3x7G8gxWkQLJrHOijE?%24searchText=${input}`;
         $("#formSubmit")[0].reset();
     });
     
     
     $("#searchIcon").click(() => {
         input = document.getElementById("search-bar").value;
-        window.location = `https://jam12.sapjam.com/home/hkfvT1ygsHLz13M5N7553v?%24searchText=${input}`;
+        window.location = `https://jamsalesdemo2.sapjam.com/home/HdMS3x7G8gxWkQLJrHOijE?%24searchText=${input}`;
     });
     
     $("#searchButton").click(() => {
         input = document.getElementById("search-bar").value;
-        window.location = `https://jam12.sapjam.com/home/hkfvT1ygsHLz13M5N7553v?%24searchText=${input}`
+        window.location = `https://jamsalesdemo2.sapjam.com/home/HdMS3x7G8gxWkQLJrHOijE?%24searchText=${input}`;
     });
         
     (function getUserID() {

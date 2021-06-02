@@ -1,6 +1,9 @@
 $(function () {   
+
+    // document.getElementById('osapi_name').innerHTML= jamApp.currentUser.attributes.FirstName;
+
     $.ajax({
-        url: 'https://b713009c3705.ngrok.io/recommendations/recommended/1/getRecommendedBy',
+        url: 'http://bc5df54076e2.ngrok.io/recommendations/recommended/1/getRecommendedBy',
         type: 'GET',
         json: 'callback',
         contentType: 'application/json',
@@ -18,13 +21,14 @@ $(function () {
         }
     });
     });
-
+    
 
     let albumAccordion = function (data) {
         data.forEach(function (item, index) {
         console.log(item, index);
-        if (item.STUD_ID == '451288'){
+        if (item.STUD_ID == 'sfadmin'){
             $('.accordion-body').append(
+                '<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">' +
                 '<div class="card" style="width: 18rem;">' +
                     '<div class="card-body">' + 
                         '<h5 class="card-title">' + item.CPNT_TITLE + '!</h5>' +
