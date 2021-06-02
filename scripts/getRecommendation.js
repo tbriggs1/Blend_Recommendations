@@ -1,7 +1,6 @@
-$(function () {
-
+$(function () {   
     $.ajax({
-        url: 'https://ee12a4e9098e.ngrok.io/recommendations/recommended/1/getRecommendedBy',
+        url: 'https://b713009c3705.ngrok.io/recommendations/recommended/1/getRecommendedBy',
         type: 'GET',
         json: 'callback',
         contentType: 'application/json',
@@ -19,19 +18,22 @@ $(function () {
         }
     });
     });
-    
+
+
     let albumAccordion = function (data) {
         data.forEach(function (item, index) {
         console.log(item, index);
-        $('#discogAccordion').append(
-            '<div class="card w-75">' +
-            '<div class="card-body">' +
-              '<h4 class="card-title">Trending Content</h4>' +
-              '<h6 class="card-title">Recommended By</h6>' +
-              '<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>' +
-              '<a href="#" class="btn btn-primary">Button</a>' +
-            '</div>' +
-          '</div>'
-        );
+        if (item.STUD_ID == '451288'){
+            $('.accordion-body').append(
+                '<div class="card" style="width: 18rem;">' +
+                    '<div class="card-body">' + 
+                        '<h5 class="card-title">' + item.CPNT_TITLE + '!</h5>' +
+                        '<h6 class="card-subtitle mb-2 text-muted"> Recommended By: ' + item.RECOMMENDED_BY + '</h6>' +
+                        '<p class="card-text"> Comments: '+ item.COMMENTS + '</p>' +
+                        '<a href="' +  item.DEEPLINK_URI  + '"' + 'class="btn btn-primary">Launch</a>' +
+                '</div>' +
+                '</div>'
+            );
+        }
     });
     }
