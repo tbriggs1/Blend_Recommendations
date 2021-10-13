@@ -20,7 +20,13 @@ const logo = document.querySelector('.blend_recommendations');
     })
 })();
 
+(function notication(){
+    const noticationImage = document.createElement('img');
 
+    noticationImage.src = 'https://github.com/tbriggs1/Blend_Recommendations/blob/master/1notifcation.png?raw=true';
+
+    logo.appendChild(image);
+}) ();
 
 
     
